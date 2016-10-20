@@ -1,0 +1,2 @@
+# namyasto
+Angular training app
