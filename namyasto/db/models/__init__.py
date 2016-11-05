@@ -1,3 +1,3 @@
-from micro_service.db.models.api import *
+from namyasto.db.models.api import *
 
-from namyasto.db.models.process import Person
+from namyasto.db.models.person import Person

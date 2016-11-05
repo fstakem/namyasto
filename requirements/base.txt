@@ -3,3 +3,4 @@ flask-restful
 flask-sqlalchemy
 sqlalchemy
 alembic
+psycopg2

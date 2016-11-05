@@ -80,11 +80,13 @@ def reset_db(db_path, db):
         pass
 
     touch(db_path)
+    from namyasto.db.models.person import Person
     db.create_all()
     db.session.commit()
 
 def load_fixtures():
-    pass
+    data_path = os.path.join(app_path, 'db', 'fixtures', 'data.csv')
+
 
 def touch(path):
     with open(path, 'a'):
