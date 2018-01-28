@@ -60,6 +60,8 @@ def create_flask_app(config):
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS']  = False
     flask_app.config['SQLALCHEMY_DATABASE_URI']         = db_connect_str
     flask_app.config['DB_NAME']                         = db_name
+    flask_app.config['STATIC_FOLDER']                   = './static/'
+
     return flask_app
 
 def register_versions(flask_app):

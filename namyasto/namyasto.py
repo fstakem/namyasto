@@ -13,7 +13,7 @@ import time
 from datetime import datetime
 import random
 
-from flask import request, url_for, jsonify
+from flask import request, url_for, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 from namyasto import app_path, project_path
@@ -41,7 +41,7 @@ _           = register_versions(flask_app)
 # -----------------------------------------------------
 @flask_app.route('/')
 def root():
-    return 'Root page'
+    return render_template('index.html')
 
 @flask_app.route('/version')
 def version():
